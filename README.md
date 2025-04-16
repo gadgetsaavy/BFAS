@@ -32,14 +32,14 @@ ROOT
     ├── scripts
     │   └── Deploy.py
     ├── utils
-    │   ├── gasestimator.py
+    │   ├── GasEstimator.py
     │   └── MEVWrapper.py
     ├── tests
-    │   └── test_all.py
+    │   └── Test_all.py
     ├── bots
-    │   ├── bellmanford.py
-    │   ├── liquidityaggregator.py
-    │   └── uniswapclient.py
+    │   ├── BellmanFord.py
+    │   ├── LiquidityAggregator.py
+    │   └── UniswapClient.py
     ├── .env
     ├── requirements.txt
     └── .gitignore

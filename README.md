@@ -123,7 +123,7 @@ python3 src/tests/test_all.py
 
 ## Project Initialization Script
 
-**`init_project.py`** creates the full directory structure, files, initializes Git, and pushes to GitHub.
+**`initialize.py`** creates the full directory structure, files, initializes Git, and pushes to GitHub.
 
 ### Script Flow
 

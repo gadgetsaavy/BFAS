@@ -1,0 +1,17 @@
+# Web3 interaction and Uniswap
+web3==6.11.5
+eth-account==0.10.0
+uniswap-python==0.5.4
+
+# For handling environment variables
+python-dotenv==1.0.1
+
+# For HTTP requests (liquidity aggregator)
+requests==2.31.0
+
+# For unit testing and test assertions
+pytest==8.1.1
+
+# Optional: for logging, debugging, and async if needed later
+loguru==0.7.2
+aiohttp==3.9.3

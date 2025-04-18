@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+.env.bak
+.venv/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+pytest_cache/
+
+# Ethereum build and deployment artifacts
+build/
+artifacts/
+cache/
+*.json
+
+# VSCode or PyCharm files
+.vscode/
+.idea/
+
+# Mac and Linux files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled Solidity files
+*.abi
+*.bin
+
+# Log files
+*.log
+
+# Node modules if any JS frontend is added
+node_modules/

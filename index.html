@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FlashLoan Arbitrage Bot</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f0f0f, #1e1e1e);
+      color: #d6f8d6;
+      font-family: 'Courier New', Courier, monospace;
+      padding: 40px;
+      line-height: 1.75;
+    }
+
+    h1, h2, h3 {
+      color: #00ffc6;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #00ffc6;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.8em;
+    }
+
+    h3 {
+      margin-top: 20px;
+      font-size: 1.4em;
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
+    code {
+      background-color: #222;
+      padding: 4px 6px;
+      border-radius: 4px;
+      color: #00ffa1;
+    }
+
+    pre {
+      background-color: #141414;
+      padding: 15px 20px;
+      border-left: 4px solid #00ffc6;
+      border-radius: 6px;
+      overflow-x: auto;
+      box-shadow: 0 0 10px #000;
+      margin-bottom: 30px;
+      color: #d9ffef;
+    }
+
+    ul, ol {
+      margin-bottom: 20px;
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #00ccff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .terminal {
+      font-family: 'Courier New', Courier, monospace;
+      background: #0d0d0d;
+      border: 1px solid #00ffc6;
+      border-radius: 5px;
+      padding: 15px;
+      color: #aaffee;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>FlashLoan Arbitrage Bot System</h1>
+
+  <p>
+    Welcome to the most aggressive Ethereum arbitrage system you've ever seen. 
+    Powered by real flash loans, on-chain atomic execution, and graph-based arbitrage detection.
+    This bot wraps and conceals transactions using Flashbots and deploys liquidity-aware pathfinding to hit multi-DEX profit routes fast and stealthy.
+  </p>
+
+  <h2>Project Directory</h2>
+  <pre>
+ROOT
+└── src
+    ├── contracts
+    │   └── FlashLoanArbitrage.sol
+    ├── scripts
+    │   └── Deploy.py
+    ├── utils
+    │   ├── gasestimator.py
+    │   └── MEVWrapper.py
+    ├── tests
+    │   └── test_all.py
+    ├── bots
+    │   ├── bellmanford.py
+    │   ├── liquidityaggregator.py
+    │   └── uniswapclient.py
+    ├── .env
+    ├── requirements.txt
+    └── .gitignore
+  </pre>
+
+  <h2>Core Capabilities</h2>
+  <ul>
+    <li>Flash Loan initiation using on-chain contract</li>
+    <li>Triangular and multi-asset arbitrage detection</li>
+    <li>MEV bundling via Flashbots relay</li>
+    <li>Liquidity-aware route building</li>
+    <li>Gas estimation for optimized profits</li>
+  </ul>
+
+  <h2>Smart Contract</h2>
+  <p><code>FlashLoanArbitrage.sol</code></p>
+  <ul>
+    <li>Calls flash loan provider</li>
+    <li>Executes token swaps via paths</li>
+    <li>Performs profit extraction</li>
+    <li>Withdrawals restricted to contract creator</li>
+  </ul>
+
+  <h2>Python Bots</h2>
+  <ul>
+    <li><strong>bellmanford.py</strong>: Builds and solves graph for arbitrage loops</li>
+    <li><strong>liquidityaggregator.py</strong>: Polls token pairs for real-time pool depths</li>
+    <li><strong>uniswapclient.py</strong>: Manages live trade quotes + execution</li>
+  </ul>
+
+  <h2>Deployment</h2>
+  <pre class="terminal">python3 src/scripts/Deploy.py</pre>
+
+  <h2>Usage</h2>
+  <ol>
+    <li>Run pathfinder:
+      <pre class="terminal">python3 src/bots/bellmanford.py</pre>
+    </li>
+    <li>Deploy & trigger on-chain flash arbitrage</li>
+    <li>Let MEVWrapper bundle and ship your private tx</li>
+  </ol>
+
+  <h2>Environment Configuration</h2>
+  <pre>
+PRIVATE_KEY=your_private_key
+WALLET_ADDRESS=0xYourAddress
+INFURA_URL=https://mainnet.infura.io/v3/YOUR_PROJECT_ID
+FLASHBOTS_RELAY=https://relay.flashbots.net
+  </pre>
+
+  <h2>Install Dependencies</h2>
+  <pre class="terminal">pip install -r requirements.txt</pre>
+
+  <h2>Run Tests</h2>
+  <pre class="terminal">python3 src/tests/test_all.py</pre>
+
+  <h2>Project Initialization Script</h2>
+  <p>
+    Use the following Python script to automatically generate the full project directory structure, files, initialize git, create a remote GitHub repo, and push it.
+  </p>
+  <pre>
+python3 init_project.py
+  </pre>
+
+  <h3>That script will:</h3>
+  <ul>
+    <li>Create all folders and required files</li>
+    <li>Initialize a local git repo</li>
+    <li>Create and connect to a remote GitHub repo</li>
+    <li>Stage and push everything</li>
+    <li>Print all terminal output for review</li>
+    <li>Pause at the end so you can scroll over it</li>
+  </ul>
+
+  <h2>Disclaimer</h2>
+  <p>This system is built for educational and research purposes only. Use it at your own risk on testnets. Mainnet deployment must comply with ethical and legal standards.</p>
+
+</body>
+</html>
+
